@@ -10,13 +10,15 @@ function inputLength() {
 
 function createListElement() {
 	const li = document.createElement("div");
-	// const text = document.createElement("div");
 	li.setAttribute("class","col");
 	const delet = document.createElement("button");
-	delet.innerHTML = "Borrar";
+	// delet.innerHTML = "Borrar";
 	delet.setAttribute("class","btn")
+	const i = document.createElement("i")
+	i.setAttribute("class", "bi bi-trash-fill");
 	li.appendChild(document.createTextNode(input.value));
-	// li.appendChild(text);
+	
+	delet.appendChild(i);
 	li.appendChild(delet);
 	main.appendChild(li);
 	input.value = "";
