@@ -1,6 +1,6 @@
 const button = document.getElementById("enter");
 const input = document.getElementById("userinput");
-const ul = document.querySelector("ul");
+const main = document.querySelector("main");
 
 
 function inputLength() {
@@ -9,16 +9,16 @@ function inputLength() {
 }
 
 function createListElement() {
-	const li = document.createElement("li");
+	const li = document.createElement("div");
 	// const text = document.createElement("div");
-	// li.setAttribute("class","text");
+	li.setAttribute("class","col");
 	const delet = document.createElement("button");
 	delet.innerHTML = "Borrar";
 	delet.setAttribute("class","btn")
 	li.appendChild(document.createTextNode(input.value));
 	// li.appendChild(text);
 	li.appendChild(delet);
-	ul.appendChild(li);
+	main.appendChild(li);
 	input.value = "";
 	
 	li.addEventListener("click", ()=>{

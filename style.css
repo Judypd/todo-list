@@ -1,12 +1,16 @@
 body {
   font-family: 'Oswald', Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin:2rem;
   padding: 1rem;
 }
-#userinput {
-  font-size: 1.5rem;
+
+input {
+  font-size: 1.3rem;
+  border:1px solid #ccc;
+  border-radius: 8px;
 }
+
 .coolTitle {
   text-align: center;
   font-size: 2rem;
@@ -16,9 +20,7 @@ body {
   color: rgba(12, 12, 66, 0.785);
 }
 
-ul {
-  width: 75%;
-  height: 100vh;
+main {
   padding: 2rem 5rem;
   gap: 1rem;
   display: flex;
@@ -46,8 +48,6 @@ ul {
 }
 .done {
   text-decoration: line-through;
+  text-decoration-color: #2a98bc;
 }
 
-.hide {
-  display: none;
-}
