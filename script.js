@@ -21,8 +21,14 @@ function createListElement() {
 	ul.appendChild(li);
 	input.value = "";
 	
-	const il = document.querySelectorAll("li");
-	listBehavior(il);
+	li.addEventListener("click", ()=>{
+		li.classList.toggle("done");
+	});
+
+	delet.addEventListener("click", ()=>{
+		li.remove();		
+	});
+
 }
 
 function addListAfterClick() {
@@ -40,27 +46,4 @@ function addListAfterKeypress(event) {
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
-
-// comportamiento de la lista para marcar y borrar
-function listBehavior (listItems){
-	
-	const list = listItems;
-	console.log(list);
-	
-	list.forEach(todo =>{
-		console.log(todo);
-		const btnDelete = todo.querySelector(".btn");
-
-		todo.addEventListener("click", (e)=>{
-			console.log(e.target.className);
-			e.target.classList.toggle("done");
-		})
-
-		btnDelete.addEventListener("click", ()=>{
-			todo.classList.add("hide");		
-		});
-	});	
-
-
-}
 
