@@ -1,0 +1,53 @@
+body {
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-size: 1.5rem;
+  margin:2rem;
+  padding: 1rem;
+}
+#userinput {
+  font-size: 1.5rem;
+}
+.coolTitle {
+  text-align: center;
+  font-size: 2rem;
+  transform: skewY(-3deg);
+  letter-spacing: 2px;
+  word-spacing: -8px;
+  color: rgba(12, 12, 66, 0.785);
+}
+
+ul {
+  width: 75%;
+  height: 100vh;
+  padding: 2rem 5rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+ }
+
+#enter {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+#enter:hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  
+}
+.done {
+  text-decoration: line-through;
+}
+
+.hide {
+  display: none;
+}
